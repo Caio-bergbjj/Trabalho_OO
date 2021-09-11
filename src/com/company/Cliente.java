@@ -1,4 +1,8 @@
 package com.company;
 
-public class Cliente {
+import java.util.Date;
+
+public class Cliente extends Pessoa {
+    private Date entrada;
+
 }
