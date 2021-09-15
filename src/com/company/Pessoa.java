@@ -6,6 +6,7 @@ public abstract class Pessoa {
     protected int CPF;
     protected Telefone numTel;
     protected String email;
+    protected Endereco endereco;
 
     public String getNome() {
         return nome;
@@ -55,4 +56,12 @@ public abstract class Pessoa {
         this.email = email;
     }
 
+    public Endereco getEndereco() {
+        return endereco;
+    }
+
+
+    public void setEndereco(Endereco endereco) {
+        this.endereco = endereco;
+    }
 }

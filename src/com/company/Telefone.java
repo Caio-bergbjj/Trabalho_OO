@@ -9,8 +9,7 @@ public class Telefone {
         DDD = cod;
         numero = num;
     }
-    public Telefone() {
-    }
+
     @Override
     public String toString() {
         return "Telefone: (" + DDD + ") " + numero;
