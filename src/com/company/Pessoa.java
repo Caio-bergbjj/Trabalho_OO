@@ -34,7 +34,7 @@ public abstract class Pessoa {
 
 
     public void setCPF(int cPF) {
-        CPF = cPF;
+        this.CPF = cPF;
     }
 
 

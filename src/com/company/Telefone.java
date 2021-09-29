@@ -18,7 +18,7 @@ public class Telefone {
         return DDD;
     }
     public void setDDD(int dDD) {
-        DDD = dDD;
+        this.DDD = dDD;
     }
     public int getNumero() {
         return numero;
