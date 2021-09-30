@@ -9,11 +9,10 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class TelaAcesso implements ActionListener {
-    String[] data = {"one", "two", "three", "four"};
     private static ControleDados dados;
     private static JFrame janela = new JFrame("Gerenciamento da livraria");
     private static JLabel titulo = new JLabel("Escolha a Livraria que deseja Acessar", JLabel.CENTER);
-    private  JList<String> listaLivrariasCadastradas;
+    private  JList<String> livrarias;
     private String[] listaNomes = new String[50];
     private static JButton acessar = new JButton("Acessar");
     private static JButton alterar = new JButton("Alterar");
@@ -24,30 +23,30 @@ public class TelaAcesso implements ActionListener {
         dados = d;
 
         listaNomes = new ControleLivraria(dados).getNomeLivraria();
-        listaLivrariasCadastradas = new JList<String>(listaNomes);
+        livrarias = new JList<String>(listaNomes);
 
 
         titulo.setFont(new Font("Trebuchet MS",Font.BOLD,16));
         titulo.setBounds(150,10,350,30);
-        acessar.setBounds(140,150,100,30);
+        acessar.setBounds(140,230,100,30);
         acessar.setHorizontalAlignment(SwingConstants.CENTER);
-        alterar.setBounds(280,150,100,30);
+        alterar.setBounds(280,230,100,30);
         alterar.setHorizontalAlignment(SwingConstants.CENTER);
-        voltar.setBounds(420,150,100,30);
+        voltar.setBounds(420,230,100,30);
         voltar.setHorizontalAlignment(SwingConstants.CENTER);
-        listaLivrariasCadastradas.setBounds(20, 50, 350, 120);
-        listaLivrariasCadastradas.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
-        listaLivrariasCadastradas.setVisibleRowCount(10);
+        livrarias.setBounds(200, 60, 250, 120);
+        livrarias.setSelectionMode(ListSelectionModel.SINGLE_INTERVAL_SELECTION);
+        livrarias.setVisibleRowCount(10);
 
         janela.setLayout(null);
 
         janela.add(titulo);
-        janela.add(listaLivrariasCadastradas);
+        janela.add(livrarias);
         janela.add(acessar);
         janela.add(alterar);
         janela.add(voltar);
 
-        janela.setSize(800, 300);
+        janela.setSize(700, 400);
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         janela.setVisible(true);
         voltar.addActionListener(this);
@@ -60,6 +59,10 @@ public class TelaAcesso implements ActionListener {
 
         if(src == voltar) {
             new TelaMenu();
+            janela.setVisible(false);
+        }
+        if(src == acessar) {
+            new TelaAcessoLivraria();
             janela.setVisible(false);
         }
     }
