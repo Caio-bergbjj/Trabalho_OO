@@ -17,7 +17,7 @@ public class Livraria {
         email = setEmail;
         CNPJ = setCNPJ;
         endereco = setEndereco;
-        estoqueLivros = setEstoque;
+        estoqueLivros = 0;
     }
 
     @Override
