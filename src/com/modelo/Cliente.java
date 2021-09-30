@@ -5,9 +5,15 @@ import java.util.Date;
 public class Cliente extends Pessoa {
     private Date entrada;
 
-    public Cliente(Date entr, String n, int cPF, Telefone numTel, String en) {
+    public Cliente(Date entr, String n, int cPF, Telefone numTel, String email, int id, Endereco endereco) {
         this.entrada = entr;
-        nome = n;
+        this.nome = n;
+        this.CPF = cPF;
+        this.numID = id;
+        this.numTel = numTel;
+        this.email = email;
+        this.endereco = endereco;
+
 
     }
 
@@ -18,4 +24,5 @@ public class Cliente extends Pessoa {
     public void setEntrada(Date entrada) {
         this.entrada = entrada;
     }
+
 }

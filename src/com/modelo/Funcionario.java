@@ -6,43 +6,39 @@ public class Funcionario extends Pessoa{
     private double salario;
     private Date entrada;
 
+    public Funcionario(double salario, Date entrada, String n, int CPF, int id, Telefone t, Endereco endereco, String email) {
+        this.salario = salario;
+        this.entrada = entrada;
+        this.nome = n;
+        this.numID = id;
+        this.numTel = t;
+        this.CPF = CPF;
+        this.endereco = endereco;
+        this.email = email;
+
+
+
+    }
 
     public String toString() {
         return "Nome do funcionário: " + nome;
     }
 
-    public String getNome() {
-        return nome;
+    public double getSalario() {
+        return salario;
     }
 
-    public void setNome(String nome) {
-        this.nome = nome;
+    public void setSalario(double salario) {
+        this.salario = salario;
     }
 
-    public int getID() {
-        return ID;
+    public Date getEntrada() {
+        return entrada;
     }
 
-    public void setNumID(int numID) {
-        this.ID = ID;
+    public void setEntrada(Date entrada) {
+        this.entrada = entrada;
     }
-
-    public int getCPF() {
-        return CPF;
-    }
-
-    public void setCPF(int cPF) {
-        CPF = cPF;
-    }
-
-
-    public Telefone getNumTel() {
-        return numTel;
-    }
-
-    public void setNumTel(Telefone numTel) {
-        this.numTel = numTel;
-    }
-
 
 }
+

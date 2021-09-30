@@ -1,7 +1,7 @@
 package com.modelo;
 
 public abstract class Pessoa {
-    protected int ID;
+    protected int numID;
     protected String nome;
     protected int CPF;
     protected Telefone numTel;
@@ -18,13 +18,13 @@ public abstract class Pessoa {
     }
 
 
-    public int getID() {
-        return ID;
+    public int getnumID() {
+        return numID;
     }
 
 
-    public void setID(int ID) {
-        this.ID = ID;
+    public void setnumID(int numID) {
+        this.numID = numID;
     }
 
 
@@ -63,5 +63,6 @@ public abstract class Pessoa {
 
     public void setEndereco(Endereco endereco) {
         this.endereco = endereco;
+
     }
 }
