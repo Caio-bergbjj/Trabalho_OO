@@ -9,8 +9,8 @@ import java.awt.event.ActionListener;
 
         private static JFrame janela = new JFrame("Gerenciamento da livraria");
         private static JLabel titulo = new JLabel("Livraria");
-        private static JButton acessar = new JButton("acessar");
-        private static JButton cadastrar = new JButton("cadastrar");
+        private static JButton acessar = new JButton("Acessar");
+        private static JButton cadastrar = new JButton("Cadastrar");
 
         public TelaMenu() {
             titulo.setFont(new Font("Trebuchet MS",Font.BOLD,20));
@@ -33,9 +33,17 @@ import java.awt.event.ActionListener;
         public static void main(String[] args) {
             TelaMenu menu = new TelaMenu();
 
+            cadastrar.addActionListener(menu);
+            acessar.addActionListener(menu);
+
         }
 
         public void actionPerformed(ActionEvent e) {
+            Object src = e.getSource();
+
+            if(src == cadastrar)
+                new TelaCadastro();
+                janela.setVisible(false);
 
         }
     }

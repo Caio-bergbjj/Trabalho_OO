@@ -33,10 +33,6 @@ public class TelaCadastro implements ActionListener {
 
 
     }
-    public static void main(String[] args) {
-        TelaCadastro menu = new TelaCadastro();
-
-    }
 
     public void actionPerformed(ActionEvent e) {
 
