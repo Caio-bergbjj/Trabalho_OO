@@ -11,16 +11,16 @@ public class Endereco {
     private int CEP;
     private int numero;
 
-    public Endereco(String setBairro, String setPais, String setState, String setCidade, String setComplemento, String setRua, String setLote, int setCEP, int setNum) {
-        bairro = setBairro;
-        cidade = setCidade;
-        estado = setState;
-        pais = setPais;
-        complemento = setComplemento;
-        rua = setRua;
-        lote = setLote;
-        CEP = setCEP;
-        numero = setNum;
+    public Endereco(String e, String p, String s, String c, String comp, String r, String l, int cep, int n) {
+        bairro = e;
+        cidade = c;
+        estado = s;
+        pais = p;
+        complemento = comp;
+        rua = r;
+        lote = l;
+        CEP = cep;
+        numero = n;
     }
 
     @Override

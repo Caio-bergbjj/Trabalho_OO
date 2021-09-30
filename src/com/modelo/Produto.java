@@ -13,16 +13,16 @@ public abstract class Produto {
     protected double preco;
     protected String idioma;
 
-    public Produto(int ID, String setTitulo, String setGenero, String setDescricao, Date setAno, String setVersao,
-                   String setEditora, double setPreco, String setIdioma) {
-        titulo = setTitulo;
-        genero = setGenero;
-        descricao = setDescricao;
-        ano = setAno;
-        versao = setVersao;
-        editora = setEditora;
-        preco = setPreco;
-        idioma = setIdioma;
+    public Produto(int ID, String t, String g, String d, Date a, String v,
+                   String e, double p, String i) {
+        titulo = t;
+        genero = g;
+        descricao = d;
+        ano = a;
+        versao = v;
+        editora = e;
+        preco = p;
+        idioma = i;
     }
 
     public String getTitulo() {

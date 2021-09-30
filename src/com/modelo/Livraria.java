@@ -10,14 +10,14 @@ public class Livraria {
     private int CNPJ;
     private Endereco endereco;
 
-    public Livraria(int id, int setEstoque, int setCNPJ, Endereco setEndereco, String setNome, String setEmail) {
+    public Livraria(int id, int est, int cnpj, Endereco en, String n, String e) {
         totalClientes = 0;
         totalVen = 0;
-        nome = setNome;
-        email = setEmail;
-        CNPJ = setCNPJ;
-        endereco = setEndereco;
-        estoqueLivros = setEstoque;
+        nome = n;
+        email = e;
+        CNPJ = cnpj;
+        endereco = en;
+        estoqueLivros = est;
     }
 
     @Override
