@@ -7,7 +7,19 @@ public class Manga extends Produto {
     private int volume;
     private String nacionalidade;
 
-    public Manga(int ID, String setTitulo, String setGenero, String setDescricao, Date setAno, String setVersao, String setEditora, double setPreco, String setIdioma) {
-        super(ID, setTitulo, setGenero, setDescricao, setAno, setVersao, setEditora, setPreco, setIdioma);
+    public Manga(int ID, String t, String g, String d, Date a, String v,
+                   String e, double p, String i, String aut, String n, int vol) {
+        titulo = i;
+        genero = g;
+        descricao = d;
+        ano = a;
+        versao = v;
+        editora = e;
+        preco = p;
+        idioma = i;
+        autor =  aut;
+        volume = vol;
+        nacionalidade = n;
     }
+
 }
