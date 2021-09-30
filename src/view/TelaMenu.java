@@ -45,6 +45,11 @@ import java.awt.event.ActionListener;
                 new TelaCadastro();
                 janela.setVisible(false);
 
+            if(src == acessar)
+                new TelaAcesso();
+            janela.setVisible(false);
+
+
         }
     }
 
