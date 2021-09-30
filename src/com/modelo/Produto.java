@@ -66,4 +66,11 @@ public abstract class Produto {
         this.ano = novoAno;
     }
 
+    public int getId() {
+        return id;
+    }
+
+    public void setId(int id) {
+        this.id = id;
+    }
 }

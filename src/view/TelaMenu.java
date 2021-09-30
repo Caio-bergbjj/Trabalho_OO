@@ -1,5 +1,7 @@
 package view;
 
+import controle.ControleDados;
+
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -11,6 +13,7 @@ import java.awt.event.ActionListener;
         private static JLabel titulo = new JLabel("Livraria");
         private static JButton acessar = new JButton("Acessar");
         private static JButton cadastrar = new JButton("Cadastrar");
+        public static ControleDados dados = new ControleDados();
 
         public TelaMenu() {
             titulo.setFont(new Font("Trebuchet MS",Font.BOLD,20));
@@ -45,10 +48,10 @@ import java.awt.event.ActionListener;
                 new TelaCadastro();
                 janela.setVisible(false);
 
-            if(src == acessar)
-                new TelaAcesso();
-            janela.setVisible(false);
-
+            if(src == acessar) {
+                new TelaAcesso(dados);
+                janela.setVisible(false);
+            }
 
         }
     }
