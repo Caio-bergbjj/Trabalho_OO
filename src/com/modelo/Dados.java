@@ -31,6 +31,8 @@ public class Dados {
                     tels[i],enderecos[i],"aluno"+i+"@gmail.com" );
             clientes[i] = new Cliente(d,"Cliente"+i,(i+2)*123456,
                     tels[i],"cliente"+i+"@gmail.com",(i+1)*112433,enderecos[i]);
+            livrarias[i] = new Livraria((i+1)*112234, 0, (i+1)*123476, enderecos[i], "Livraria"+i, "livraria"+1+"@gmail.com");
+            livros[i] = new Livro("livro"+i, "genero"+i, null, 2000+i,Integer.toString(1+i)+"ª", "Editora"+i, 2.99*i, "Portugues", "autor"+i  );
 
         }
 

@@ -5,8 +5,8 @@ import java.util.Date;
 public class Livro extends Produto {
     private String autor;
 
-    public Livro(String t, String g, String d, Date a, String v,
-                   String e, double p, String i, String aut) {
+    public Livro(String t, String g, String d, int a, String v,
+                 String e, double p, String i, String aut) {
         titulo = t;
         genero = g;
         descricao = d;

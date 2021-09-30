@@ -1,13 +1,11 @@
 package com.modelo;
 
-import java.util.Date;
-
 public abstract class Produto {
     protected int id;
     protected String titulo;
     protected String genero;
     protected String descricao;
-    protected Date ano;
+    protected int ano;
     protected String versao;
     protected String editora;
     protected double preco;
@@ -61,10 +59,10 @@ public abstract class Produto {
     public void setPreco(double novoPreco){
         this.preco = novoPreco;
     }
-    public Date getAno(){
+    public int getAno(){
         return ano;
     }
-    public void setAno(Date novoAno){
+    public void setAno(int novoAno){
         this.ano = novoAno;
     }
 

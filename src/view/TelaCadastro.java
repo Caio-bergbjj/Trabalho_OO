@@ -132,6 +132,9 @@ public class TelaCadastro implements ActionListener {
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         janela.setVisible(true);
 
+        save.addActionListener(this);
+        back.addActionListener(this);
+
     }
 
     public void actionPerformed(ActionEvent e) {
