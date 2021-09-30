@@ -32,6 +32,7 @@ public class TelaCadastro implements ActionListener {
     private static JLabel numLabel = new JLabel("Nº da Casa/Apt");
     private static JTextField num = new JTextField();
     private static JButton save = new JButton("Cadastrar");
+    private static JButton back = new JButton("Cancelar");
 
 
 
@@ -94,8 +95,10 @@ public class TelaCadastro implements ActionListener {
         numLabel.setHorizontalTextPosition(SwingConstants.CENTER);
         num.setBounds(140,510,250,30);
         num.setHorizontalAlignment(SwingConstants.CENTER);
-        save.setBounds(350,570,200,30);
+        save.setBounds(340,570,100,30);
         save.setHorizontalAlignment(SwingConstants.CENTER);
+        back.setBounds(480,570,100,30);
+        back.setHorizontalAlignment(SwingConstants.CENTER);
 
         janela.setLayout(null);
 
@@ -123,16 +126,20 @@ public class TelaCadastro implements ActionListener {
         janela.add(numLabel);
         janela.add(num);
         janela.add(save);
+        janela.add(back);
 
         janela.setSize(900, 800);
         janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
         janela.setVisible(true);
 
-
     }
 
     public void actionPerformed(ActionEvent e) {
+        Object src = e.getSource();
 
+        if(src == back)
+            new TelaMenu();
+        janela.setVisible(false);
     }
 }
 
