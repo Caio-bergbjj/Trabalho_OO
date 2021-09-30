@@ -1,4 +1,4 @@
-package com.company;
+package com.modelo;
 
 public class Endereco {
     private String bairro;

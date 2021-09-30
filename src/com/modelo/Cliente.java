@@ -1,12 +1,11 @@
-package com.company;
+package com.modelo;
 
 import java.util.Date;
-import java.util.Random;
 
 public class Cliente extends Pessoa {
     private Date entrada;
 
-    public Cliente(Date entr, String n, int cPF, Telefone numTel, String em) {
+    public Cliente(Date entr, String n, int cPF, Telefone numTel, String en) {
         this.entrada = entr;
         nome = n;
 

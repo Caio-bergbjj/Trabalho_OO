@@ -1,4 +1,4 @@
-package com.company;
+package com.modelo;
 
 public class Manga extends Produto {
     private String autor;

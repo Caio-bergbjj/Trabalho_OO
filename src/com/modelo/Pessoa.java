@@ -1,4 +1,4 @@
-package com.company;
+package com.modelo;
 
 public abstract class Pessoa {
     protected int ID;
@@ -48,7 +48,7 @@ public abstract class Pessoa {
     }
 
     public String getEmail() {
-        return nome;
+        return email;
     }
 
 
