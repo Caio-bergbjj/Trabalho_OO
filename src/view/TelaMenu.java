@@ -15,7 +15,10 @@ import java.awt.event.ActionListener;
         private static JButton cadastrar = new JButton("Cadastrar");
         public static ControleDados dados = new ControleDados();
 
+
+
         public TelaMenu() {
+            dados.CriarLivraria();
             titulo.setFont(new Font("Trebuchet MS",Font.BOLD,20));
             titulo.setBounds(150,10,150,30);
             acessar.setBounds(140,50,100,30);
@@ -45,14 +48,13 @@ import java.awt.event.ActionListener;
             Object src = e.getSource();
 
             if(src == cadastrar)
-                new TelaCadastro();
+                new TelaCadastro().inserirLivraria(dados,0);
                 janela.setVisible(false);
 
             if(src == acessar) {
                 new TelaAcesso(dados);
                 janela.setVisible(false);
             }
-
         }
     }
 
