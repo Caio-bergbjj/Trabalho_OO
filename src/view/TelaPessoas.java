@@ -50,6 +50,10 @@ public class TelaPessoas implements ActionListener {
             new TelaAcessoLivraria();
             janela.setVisible(false);
         }
+        if(src == cadastrar) {
+            new TelaSelecionarPessoa();
+            janela.setVisible(false);
+        }
 
     }
 }
