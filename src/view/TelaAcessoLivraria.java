@@ -1,7 +1,5 @@
 package view;
 
-import controle.ControleDados;
-
 import javax.swing.*;
 import java.awt.*;
 import java.awt.event.ActionEvent;
@@ -46,20 +44,24 @@ public class TelaAcessoLivraria implements ActionListener {
 
     public void actionPerformed(ActionEvent e) {
         Object src = e.getSource();
+        int opcao;
         if(src == voltar) {
             new TelaMenu();
             janela.setVisible(false);
         }
         if(src == pessoa) {
-            new TelaPessoas();
+            opcao = 1;
+            new TelaPPV(opcao);
             janela.setVisible(false);
         }
         if(src == produto) {
-            new TelaProdutos();
+            opcao = 0;
+            new TelaPPV(opcao);
             janela.setVisible(false);
         }
         if(src == venda) {
-            new TelaVendas();
+            opcao = 2;
+            new TelaPPV(opcao);
             janela.setVisible(false);
         }
 
