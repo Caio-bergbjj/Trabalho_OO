@@ -47,7 +47,7 @@ public class TelaAcessoLivraria implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         Object src = e.getSource();
         if(src == voltar) {
-            new TelaAcesso(null);
+            new TelaMenu();
             janela.setVisible(false);
         }
         if(src == pessoa) {

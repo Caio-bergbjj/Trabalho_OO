@@ -50,6 +50,10 @@ public class TelaVendas implements ActionListener {
             new TelaAcessoLivraria();
             janela.setVisible(false);
         }
+        if(src == cadastrar) {
+            new TelaCadastroVenda();
+            janela.setVisible(false);
+        }
 
     }
 }

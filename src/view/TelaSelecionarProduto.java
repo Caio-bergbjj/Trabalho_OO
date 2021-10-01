@@ -52,10 +52,22 @@ public class TelaSelecionarProduto implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         Object src = e.getSource();
 
-        if(src == voltar)
+        if(src == voltar) {
             new TelaProdutos();
-        janela.setVisible(false);
-
+            janela.setVisible(false);
+        }
+        if(src == livro) {
+            new TelaCadastroLivro();
+            janela.setVisible(false);
+        }
+        if(src == manga) {
+            new TelaCadastroManga();
+            janela.setVisible(false);
+        }
+        if(src == revista) {
+            new TelaCadastroRevista();
+            janela.setVisible(false);
+        }
 
     }
 }

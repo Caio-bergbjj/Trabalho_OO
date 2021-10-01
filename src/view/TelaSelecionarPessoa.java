@@ -48,11 +48,18 @@ public class TelaSelecionarPessoa implements ActionListener {
     public void actionPerformed(ActionEvent e) {
         Object src = e.getSource();
 
-        if(src == voltar)
+        if(src == voltar) {
             new TelaPessoas();
-        janela.setVisible(false);
-
-
+            janela.setVisible(false);
+        }
+        if(src == cliente) {
+            new TelaCadastroCliente();
+            janela.setVisible(false);
+        }
+        if(src == funcionario) {
+            new TelaCadastroFuncionario();
+            janela.setVisible(false);
+        }
     }
 }
 
