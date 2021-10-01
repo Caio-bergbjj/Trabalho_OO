@@ -6,7 +6,7 @@ public class Livraria {
     private String email;
     private int estoqueLivros;
     private int totalClientes;
-    private int totalVen;
+    private int totalVendas;
     private int CNPJ;
     private Endereco endereco;
     private Cliente[] clientes = new Cliente[50];
@@ -19,7 +19,7 @@ public class Livraria {
 
     public Livraria(int id, int setEstoque, int setCNPJ, Endereco setEndereco, String setNome, String setEmail) {
         totalClientes = 0;
-        totalVen = 0;
+        totalVendas = 0;
         nome = setNome;
         email = setEmail;
         CNPJ = setCNPJ;
@@ -31,7 +31,7 @@ public class Livraria {
     public String toString() {
         return "Detalhes da Livraria:\n " +
                 "Nome: " + nome + "\n Contato: " + email + "\n Endereço: " + endereco +"\n CNPJ: " + CNPJ
-                + "\n Número de Livros em Estoque: " + estoqueLivros + "\n Total de Vendas: " + totalVen;
+                + "\n Número de Livros em Estoque: " + estoqueLivros + "\n Total de Vendas: " + totalVendas;
     }
     public int getID() {
         return ID;
@@ -57,8 +57,8 @@ public class Livraria {
         this.totalClientes = totalClientes;
     }
 
-    public void setTotalVen(int totalVen) {
-        this.totalVen = totalVen;
+    public void setTotalVen(int totalVendas) {
+        this.totalVendas = totalVendas;
     }
 
     public Endereco getEndereco() {
@@ -128,7 +128,7 @@ public class Livraria {
         return totalClientes;
     }
     public int getTotalVen() {
-        return totalVen;
+        return totalVendas;
     }
     public int getCNPJ() {
         return CNPJ;

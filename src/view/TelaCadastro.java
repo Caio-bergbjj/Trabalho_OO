@@ -17,6 +17,8 @@ public class TelaCadastro implements ActionListener {
     private static JTextField email = new JTextField();
     private static JLabel cnpjLabel = new JLabel("CNPJ");
     private static JTextField cnpj = new JTextField();
+    private static JLabel enderecoLabel = new JLabel("Endereço");
+    private static JTextField endereco = new JTextField();
     private static JButton save = new JButton("Cadastrar");
     private static JButton back = new JButton("Cancelar");
     private String[] novoDado = new String[12];
@@ -50,9 +52,14 @@ public class TelaCadastro implements ActionListener {
             cnpjLabel.setHorizontalTextPosition(SwingConstants.CENTER);
             cnpj.setBounds(140, 170, 250, 30);
             cnpj.setHorizontalAlignment(SwingConstants.CENTER);
-            save.setBounds(340, 570, 100, 30);
+            enderecoLabel.setFont(new Font("Trebuchet MS", Font.BOLD, 12));
+            enderecoLabel.setBounds(540, 135, 150, 30);
+            enderecoLabel.setHorizontalTextPosition(SwingConstants.CENTER);
+            endereco.setBounds(540, 170, 250, 30);
+            endereco.setHorizontalAlignment(SwingConstants.CENTER);
+            save.setBounds(340, 270, 100, 30);
             save.setHorizontalAlignment(SwingConstants.CENTER);
-            back.setBounds(480, 570, 100, 30);
+            back.setBounds(480, 270, 100, 30);
             back.setHorizontalAlignment(SwingConstants.CENTER);
 
             janela.setLayout(null);
@@ -64,10 +71,12 @@ public class TelaCadastro implements ActionListener {
             janela.add(email);
             janela.add(cnpjLabel);
             janela.add(cnpj);
+            janela.add(enderecoLabel);
+            janela.add(endereco);
             janela.add(save);
             janela.add(back);
 
-            janela.setSize(900, 800);
+            janela.setSize(900, 400);
             janela.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
             janela.setVisible(true);
 
