@@ -49,7 +49,7 @@ public class TelaSelecionarPessoa implements ActionListener {
         Object src = e.getSource();
 
         if(src == voltar) {
-            new TelaPessoas();
+            new TelaPPV(1);
             janela.setVisible(false);
         }
         if(src == cliente) {

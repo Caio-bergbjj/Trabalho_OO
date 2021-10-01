@@ -53,7 +53,7 @@ public class TelaSelecionarProduto implements ActionListener {
         Object src = e.getSource();
 
         if(src == voltar) {
-            new TelaProdutos();
+            new TelaPPV(0);
             janela.setVisible(false);
         }
         if(src == livro) {
